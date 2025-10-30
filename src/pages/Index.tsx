@@ -40,7 +40,7 @@ const Index = () => {
     {
       icon: 'Fence',
       title: 'Строительство',
-      description: 'Пристройки, веранды, заборы и малые архитектурные формы'
+      description: 'Пристройки'
     },
     {
       icon: 'Wrench',
