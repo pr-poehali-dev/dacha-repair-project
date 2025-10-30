@@ -462,7 +462,7 @@ const Index = () => {
                   <div>
                     <Icon name="MapPin" className="mx-auto mb-2 text-primary" size={24} />
                     <div className="font-semibold mb-1">Адрес</div>
-                    <div className="text-muted-foreground">Московская область</div>
+                    <div className="text-muted-foreground">г. Сергиев Посад</div>
                   </div>
                 </div>
               </div>
@@ -506,7 +506,7 @@ const Index = () => {
               <ul className="space-y-2 text-sm text-gray-400">
                 <li>+7 (901) 704-08-40</li>
                 <li>drenajstroi049@gmail.com</li>
-                <li>Московская область</li>
+                <li>г. Сергиев Посад</li>
               </ul>
             </div>
           </div>
