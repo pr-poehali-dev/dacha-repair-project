@@ -51,11 +51,6 @@ const Index = () => {
       icon: 'PaintBucket',
       title: 'Отделочные работы',
       description: 'Штукатурка, покраска, обои, укладка плитки'
-    },
-    {
-      icon: 'Home',
-      title: 'Кровельные работы',
-      description: 'Монтаж и ремонт крыш любой конфигурации'
     }
   ];
 
@@ -64,8 +59,7 @@ const Index = () => {
     { service: 'Капитальный ремонт', unit: 'м²', price: 'от 5 000 ₽' },
     { service: 'Укладка плитки', unit: 'м²', price: 'от 1 800 ₽' },
     { service: 'Монтаж забора', unit: 'м.п.', price: 'от 3 000 ₽' },
-    { service: 'Ландшафтный дизайн', unit: 'сотка', price: 'от 15 000 ₽' },
-    { service: 'Кровельные работы', unit: 'м²', price: 'от 2 000 ₽' }
+    { service: 'Ландшафтный дизайн', unit: 'сотка', price: 'от 15 000 ₽' }
   ];
 
   const testimonials = [
@@ -104,12 +98,6 @@ const Index = () => {
       title: 'Строительство веранды',
       description: 'Пристройка веранды 30 м²',
       category: 'Строительство'
-    },
-    {
-      image: 'https://cdn.poehali.dev/projects/7a8c8bc8-f5d4-4821-89e2-22d90223a412/files/14d2f159-ce85-43a3-9f04-6648e6a34f5b.jpg',
-      title: 'Кровельные работы',
-      description: 'Замена кровли, металлочерепица',
-      category: 'Кровля'
     },
     {
       image: 'https://cdn.poehali.dev/projects/7a8c8bc8-f5d4-4821-89e2-22d90223a412/files/59ed1875-75db-4be1-9736-9b53dcd407eb.jpg',
