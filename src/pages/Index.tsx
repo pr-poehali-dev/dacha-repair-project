@@ -457,7 +457,7 @@ const Index = () => {
                   <div>
                     <Icon name="Mail" className="mx-auto mb-2 text-primary" size={24} />
                     <div className="font-semibold mb-1">Email</div>
-                    <div className="text-muted-foreground">info@dachamaster.ru</div>
+                    <div className="text-muted-foreground">drenajstroi049@gmail.com</div>
                   </div>
                   <div>
                     <Icon name="MapPin" className="mx-auto mb-2 text-primary" size={24} />
@@ -505,7 +505,7 @@ const Index = () => {
               <h3 className="font-heading font-semibold mb-4">Контакты</h3>
               <ul className="space-y-2 text-sm text-gray-400">
                 <li>+7 (901) 704-08-40</li>
-                <li>info@dachamaster.ru</li>
+                <li>drenajstroi049@gmail.com</li>
                 <li>Московская область</li>
               </ul>
             </div>
