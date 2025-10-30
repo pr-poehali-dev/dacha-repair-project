@@ -112,13 +112,13 @@ const Index = () => {
       category: 'Кровля'
     },
     {
-      image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=80',
+      image: 'https://cdn.poehali.dev/projects/7a8c8bc8-f5d4-4821-89e2-22d90223a412/files/59ed1875-75db-4be1-9736-9b53dcd407eb.jpg',
       title: 'Отделка фасада',
       description: 'Облицовка фасада камнем',
       category: 'Отделка'
     },
     {
-      image: 'https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=800&q=80',
+      image: 'https://cdn.poehali.dev/projects/7a8c8bc8-f5d4-4821-89e2-22d90223a412/files/8676f532-c860-487e-b3bd-f04ea26d3a6d.jpg',
       title: 'Монтаж забора',
       description: 'Забор из профлиста, 50 м.п.',
       category: 'Строительство'
