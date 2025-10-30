@@ -45,7 +45,7 @@ const Index = () => {
     {
       icon: 'Wrench',
       title: 'Коммуникации',
-      description: 'Электрика, водоснабжение, отопление и канализация'
+      description: 'Электрика, водоснабжение и канализация'
     },
     {
       icon: 'PaintBucket',
