@@ -79,6 +79,45 @@ const Index = () => {
     }
   ];
 
+  const portfolio = [
+    {
+      image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80',
+      title: 'Ремонт загородного дома',
+      description: 'Капитальный ремонт дома 120 м²',
+      category: 'Ремонт'
+    },
+    {
+      image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80',
+      title: 'Благоустройство участка',
+      description: 'Ландшафтный дизайн, 15 соток',
+      category: 'Благоустройство'
+    },
+    {
+      image: 'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&q=80',
+      title: 'Строительство веранды',
+      description: 'Пристройка веранды 30 м²',
+      category: 'Строительство'
+    },
+    {
+      image: 'https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800&q=80',
+      title: 'Кровельные работы',
+      description: 'Замена кровли, металлочерепица',
+      category: 'Кровля'
+    },
+    {
+      image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=80',
+      title: 'Отделка фасада',
+      description: 'Облицовка фасада камнем',
+      category: 'Отделка'
+    },
+    {
+      image: 'https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=800&q=80',
+      title: 'Монтаж забора',
+      description: 'Забор из профлиста, 50 м.п.',
+      category: 'Строительство'
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-white">
       <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
@@ -90,6 +129,7 @@ const Index = () => {
           <div className="hidden md:flex items-center gap-6">
             <a href="#services" className="text-muted-foreground hover:text-primary transition-colors">Услуги</a>
             <a href="#prices" className="text-muted-foreground hover:text-primary transition-colors">Прайс</a>
+            <a href="#portfolio" className="text-muted-foreground hover:text-primary transition-colors">Портфолио</a>
             <a href="#about" className="text-muted-foreground hover:text-primary transition-colors">О нас</a>
             <a href="#reviews" className="text-muted-foreground hover:text-primary transition-colors">Отзывы</a>
             <a href="#contact" className="text-muted-foreground hover:text-primary transition-colors">Контакты</a>
@@ -263,6 +303,37 @@ const Index = () => {
                 className="rounded-lg w-full h-48 object-cover mt-8"
               />
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" className="py-20">
+        <div className="container mx-auto max-w-6xl px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-heading font-bold text-foreground mb-4">Наши работы</h2>
+            <p className="text-lg text-muted-foreground">Галерея выполненных проектов</p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {portfolio.map((project, index) => (
+              <Card key={index} className="overflow-hidden group cursor-pointer hover:shadow-xl transition-all">
+                <div className="relative overflow-hidden aspect-[4/3]">
+                  <img 
+                    src={project.image} 
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute top-3 right-3">
+                    <span className="bg-primary text-white text-xs font-semibold px-3 py-1 rounded-full">
+                      {project.category}
+                    </span>
+                  </div>
+                </div>
+                <CardHeader>
+                  <CardTitle className="font-heading text-lg">{project.title}</CardTitle>
+                  <CardDescription>{project.description}</CardDescription>
+                </CardHeader>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
