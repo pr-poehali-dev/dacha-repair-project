@@ -94,19 +94,19 @@ const Index = () => {
       category: 'Ремонт'
     },
     {
-      image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80',
+      image: 'https://cdn.poehali.dev/projects/7a8c8bc8-f5d4-4821-89e2-22d90223a412/files/6b542aa8-6222-4714-8b9c-899b75bd161a.jpg',
       title: 'Благоустройство участка',
       description: 'Ландшафтный дизайн, 15 соток',
       category: 'Благоустройство'
     },
     {
-      image: 'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&q=80',
+      image: 'https://cdn.poehali.dev/projects/7a8c8bc8-f5d4-4821-89e2-22d90223a412/files/a825a281-f27b-4819-8a25-5bae75be9606.jpg',
       title: 'Строительство веранды',
       description: 'Пристройка веранды 30 м²',
       category: 'Строительство'
     },
     {
-      image: 'https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800&q=80',
+      image: 'https://cdn.poehali.dev/projects/7a8c8bc8-f5d4-4821-89e2-22d90223a412/files/14d2f159-ce85-43a3-9f04-6648e6a34f5b.jpg',
       title: 'Кровельные работы',
       description: 'Замена кровли, металлочерепица',
       category: 'Кровля'
