@@ -429,7 +429,7 @@ const Index = () => {
                     type="tel"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    placeholder="+7 (999) 123-45-67"
+                    placeholder="+7 (901) 704-08-40"
                     required
                   />
                 </div>
@@ -452,7 +452,7 @@ const Index = () => {
                   <div>
                     <Icon name="Phone" className="mx-auto mb-2 text-primary" size={24} />
                     <div className="font-semibold mb-1">Телефон</div>
-                    <div className="text-muted-foreground">+7 (999) 123-45-67</div>
+                    <div className="text-muted-foreground">+7 (901) 704-08-40</div>
                   </div>
                   <div>
                     <Icon name="Mail" className="mx-auto mb-2 text-primary" size={24} />
@@ -504,7 +504,7 @@ const Index = () => {
             <div>
               <h3 className="font-heading font-semibold mb-4">Контакты</h3>
               <ul className="space-y-2 text-sm text-gray-400">
-                <li>+7 (999) 123-45-67</li>
+                <li>+7 (901) 704-08-40</li>
                 <li>info@dachamaster.ru</li>
                 <li>Московская область</li>
               </ul>
