@@ -88,7 +88,7 @@ const Index = () => {
 
   const portfolio = [
     {
-      image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80',
+      image: 'https://cdn.poehali.dev/projects/7a8c8bc8-f5d4-4821-89e2-22d90223a412/files/7471f180-bb28-4786-b597-7f8963d43ddc.jpg',
       title: 'Ремонт загородного дома',
       description: 'Капитальный ремонт дома 120 м²',
       category: 'Ремонт'
