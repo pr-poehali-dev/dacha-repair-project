@@ -217,7 +217,7 @@ const Index = () => {
             <div className="relative animate-fade-in" style={{ animationDelay: '0.2s' }}>
               <div className="aspect-square rounded-2xl overflow-hidden bg-secondary">
                 <img 
-                  src="https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=800&q=80" 
+                  src="https://cdn.poehali.dev/projects/7a8c8bc8-f5d4-4821-89e2-22d90223a412/files/3c8f6dd5-0556-4aac-8e47-15290356fdeb.jpg" 
                   alt="Дача" 
                   className="w-full h-full object-cover"
                 />
