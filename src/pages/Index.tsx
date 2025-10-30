@@ -4,11 +4,18 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import Icon from '@/components/ui/icon';
 
 const Index = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({ name: '', phone: '', message: '' });
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const scrollToSection = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    setIsMenuOpen(false);
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -134,9 +141,43 @@ const Index = () => {
             <a href="#reviews" className="text-muted-foreground hover:text-primary transition-colors">Отзывы</a>
             <a href="#contact" className="text-muted-foreground hover:text-primary transition-colors">Контакты</a>
           </div>
-          <Button size="sm" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
-            Консультация
-          </Button>
+          <div className="flex items-center gap-3">
+            <Button className="hidden sm:flex" size="sm" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
+              Консультация
+            </Button>
+            <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon" className="md:hidden">
+                  <Icon name="Menu" size={24} />
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right" className="w-[300px]">
+                <div className="flex flex-col gap-6 mt-8">
+                  <button onClick={() => scrollToSection('services')} className="text-left text-lg font-medium hover:text-primary transition-colors">
+                    Услуги
+                  </button>
+                  <button onClick={() => scrollToSection('prices')} className="text-left text-lg font-medium hover:text-primary transition-colors">
+                    Прайс
+                  </button>
+                  <button onClick={() => scrollToSection('portfolio')} className="text-left text-lg font-medium hover:text-primary transition-colors">
+                    Портфолио
+                  </button>
+                  <button onClick={() => scrollToSection('about')} className="text-left text-lg font-medium hover:text-primary transition-colors">
+                    О нас
+                  </button>
+                  <button onClick={() => scrollToSection('reviews')} className="text-left text-lg font-medium hover:text-primary transition-colors">
+                    Отзывы
+                  </button>
+                  <button onClick={() => scrollToSection('contact')} className="text-left text-lg font-medium hover:text-primary transition-colors">
+                    Контакты
+                  </button>
+                  <Button size="lg" className="mt-4" onClick={() => scrollToSection('contact')}>
+                    Бесплатная консультация
+                  </Button>
+                </div>
+              </SheetContent>
+            </Sheet>
+          </div>
         </nav>
       </header>
 
